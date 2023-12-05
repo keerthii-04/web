@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Biometric Authentication Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sc.js"></script>
+</head>
+<body>
+    <div class="login">
+        <form>
+        <h2><i>Verification Page!</i>
+            <form id="myForm" onsubmit="showAlert(); return false;">
+            <br>
+        <div class="inputBox">
+            <div class="password-container">
+                <div class="password-input-container">
+                  <input type="password" id="password" name="password"required required oninput="enableConfirmPassword()"  placeholder="Enter your password">
+                  <span class="toggle-password" onclick="togglePasswordVisibility('password')">&#x1F441;</span> 
+                </div>
+              </div>
+              <div class="password-container">
+                <div class="password-input-container">
+                  <input type="password" id="confirmPassword" name="confirmPassword"required required disabled placeholder="Confirm your password"  oninput="validatePassword()">
+                  <span class="toggle-password" onclick="togglePasswordVisibility('confirmPassword')">&#x1F441;</span>
+                  <p id="password-error" class="error-message"></p>
+        </div>
+        <br>
+        <div class="button">
+         <button onclick="showAlert()">LOG IN</button>
+        </div>
+        </form>
+        <h4 class="title"><i>OR</i></h4>
+
+        <div class="fingerprint">
+            <div class="fingerprintBox">
+                <img src="C:\Users\admin\Desktop\photo.jfif"> 
+            </div>
+            <p class="para">Login with Fingerprint</p>
+        </div>
+</body>
+</html>

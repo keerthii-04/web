@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(194, 185, 228);
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(130, 110, 148);
+    margin-bottom: 20px;
+}
+.login
+{
+    position: relative;
+    width: 380px;
+    padding: 50px 50px 50px;
+    box-shadow: 15px 15px 20px rgb(0,0,0,0.1), 
+    -15px -15px 20px  #fffb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.login form
+{
+    position: relative;
+    width: 100%;
+}
+.login form h2
+{
+    font-size: 2em;
+    margin-bottom: 2px;
+    line-height: 0.9em;
+}
+.login form h2 span
+{
+ font-weight: 300;
+ font-size: 0.65em;
+} 
+.login form.inputBox 
+{
+  position: relative;
+  display: flex;  
+} 
+.login form.inputBox input
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.login form .inputBox input[type="password"]
+{
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    box-shadow: inset 5px 5px 10px rgb(0,0,0,0.1),
+    inset -5px -5px 10px #fff;
+}
+.login form .inputBox 
+{
+    margin-top: 15px;
+    box-shadow: inset 5px 5px 10px rgba(103, 78, 129, 0.63);
+    inset: -5px -5px 10px #ffffff99;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.login form .inputBox :focus
+{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+    inset: -5px -5px 10px #fff;
+}
+.login .fingerprint
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    
+}
+.login .fingerprint .fingerprintBox
+{
+    box-shadow: inset 5px 5px 10px rgba(122, 84, 84, 0.1);
+    inset: -5px -5px 10px #fff;
+    border: 3px solid #edf1f4;
+    padding: 15px 20px 10px;
+    border-radius: 10px;
+    background: linear-gradient(315deg,#49437c, #5f5d77);
+    
+}
+.login .fingerprint .fingerprintBox img
+{
+    max-width: 90px;
+    filter:saturate(1);
+    animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 1;
+
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+}
+.login .fingerprint p
+{
+    font-weight: 500;
+   
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family: 'Arial';
+    font-size: 50px;
+}
+
+  
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .password-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .password-input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    padding-right: 30px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .error-message {
+    
+    font-family: Arial, sans-serif;
+    color: rgb(23, 20, 20);
+    margin-top: 5px;
+    font-size:20px;
+  }
+  .para{
+    font-size:20px;
+  }
+  .title{
+    margin-bottom:10px;
+    font-size:medium;
+}
